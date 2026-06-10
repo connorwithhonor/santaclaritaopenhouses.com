@@ -1,0 +1,12 @@
+# santaclaritaopenhouses.com - prepared for git-canonical auto-deploy.
+# Repo is a verified complete mirror of live (615 blog posts, parity confirmed 2026-06-10).
+# Once the Netlify project is linked to this repo, push = deploy.
+[build]
+  publish = "."
+
+# Never let Netlify's HTML post-processor rewrite the 615 published posts (it has injected
+# duplicate favicon/meta blocks in the past). Source HTML is trusted and deploys as-is.
+[build.processing]
+  skip_processing = true
+[build.processing.html]
+  pretty_urls = true
