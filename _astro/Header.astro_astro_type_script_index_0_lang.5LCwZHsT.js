@@ -1,0 +1,1 @@
+import{a as m}from"./macbox.D1TNj1-e.js";const e=document.getElementById("hd-askform"),n=document.getElementById("hd-q");e&&n&&e.addEventListener("submit",function(o){o.preventDefault();const t=n.value.trim();location.href="/search"+(t?"?q="+encodeURIComponent(t):"")});m({form:"hd-askform",input:"hd-q"});
